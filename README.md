@@ -57,6 +57,7 @@ copyright = "© 2015 Copyright Text"
   headerCover = "images/headerCover.png" # optional
   footerCover = "images/footerCover.png" # optional
   googleAnalyticsUserID = "Your Analytics User Id" # optional
+  facebookAppId = "Your Facebook Application Id" # optional
   hatenaBookmark = true
 
 [permalinks]
