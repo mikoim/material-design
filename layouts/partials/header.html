@@ -48,6 +48,9 @@
         {{if .Site.Params.hatenaBookmark}}
           <a href="http://b.hatena.ne.jp/entry/{{.Permalink}}"><img src="{{.Site.BaseURL}}/images/hatenaBookmark.png" alt="Hatena Bookmark"></a>
         {{end}}
+        {{if .Site.Params.flickr}}
+          <a href="https://www.flickr.com/photos/{{.Site.Params.flickr}}"><img src="{{.Site.BaseURL}}/images/flickr-dreamstale30.png" alt="Flickr"></a>
+        {{end}}
           <a href="{{.Site.BaseURL}}/index.xml"><img src="{{.Site.BaseURL}}/images/feed-dreamstale27.png" alt="Atom"></a>
         </div>
       </div>
