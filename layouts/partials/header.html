@@ -6,14 +6,20 @@
   {{ if eq .Title .Site.Title }}
   <title>{{ .Title }}</title>
   <meta name="description" content="{{.Site.Params.description}}">
+  <meta property="og:description" content="{{.Site.Params.description}}">
   {{ else }}
   <title>{{ .Title }} - {{ .Site.Title }}</title>
   <meta name="description" content="{{.Description}}">
+  <meta property="og:description" content="{{.Description}}">
   {{ end }}
   <meta name="keywords" content="{{delimit .Keywords ", "}}">
   {{if .Site.Params.facebookAppId}}
   <meta property="fb:app_id" content="{{.Site.Params.facebookAppId}}">
   {{end}}
+  <meta property="og:url" content="{{.Permalink}}">
+  <meta property="og:site_name" content="{{.Site.Title}}">
+  <meta property="og:title" content="{{.Title}}">
+  <meta property="og:image" content="{{.Site.BaseURL}}/{{.Site.Params.footerCover}}">
   <link href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen"/>
   <link href="{{.Site.BaseURL}}/css/style.css" type="text/css" rel="stylesheet" media="screen"/>
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
