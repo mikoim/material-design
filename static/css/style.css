@@ -35,7 +35,7 @@ p {
 }
 
 .card-panel img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .icon-block {
